@@ -16,6 +16,11 @@ Contibutions from the following modders was invaluable and appreciated:
 
 # Change Log
 
+### Version v1.3.7
+  * Support for build 0.221.4
+  * Changing the csproj to doc recommend
+  * Changing the ILRepack to Costura.Fody
+
 ### Version v1.3.6
   * Support for build 0.219.16
 
