@@ -12,9 +12,8 @@ using Utilities;
 
 namespace AMP_Configurable
 {
-  [BepInPlugin("amped.mod.auto_map_pins", "AMPED - Auto Map Pins Enhanced", "1.3.6")]
-  [BepInProcess("valheim.exe")]
-  public class Mod : BaseUnityPlugin
+  [BepInPlugin("amped.mod.auto_map_pins", MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
+  public class Mod: BaseUnityPlugin
   {
     //***CONFIG ENTRIES***//
     //***GENERAL***//
@@ -150,8 +149,8 @@ namespace AMP_Configurable
         new ConfigDescription("Writes object ids to log.\nThese can be used to create AMPED PinTypes in json config files", null,
         new ConfigurationManagerAttributes { Order = 5, DispName = "Object Id Logging" }));
       onlyLogUnique = Config.Bind<bool>("3. Logging", "onlyLogUnique", true,
-       new ConfigDescription("Sets AMPED to only log out an objectId once, instead of every time an object spawns in.\nIt will logout a full list upon game exit.", null,
-       new ConfigurationManagerAttributes { Order = 4, DispName = "Unique Objects Only" }));
+        new ConfigDescription("Sets AMPED to only log out an objectId once, instead of every time an object spawns in.\nIt will logout a full list upon game exit.", null,
+        new ConfigurationManagerAttributes { Order = 4, DispName = "Unique Objects Only" }));
       logKnownPinObjects = Config.Bind<bool>("3. Logging", "logKnownPinObjects", false,
         new ConfigDescription("Allow logging of objects that currently have a configured Pin Type.", null,
         new ConfigurationManagerAttributes { Order = 3, DispName = "Log Known Pin Objects" }));
@@ -244,10 +243,10 @@ namespace AMP_Configurable
     }
 
     /** Log Class
-     * A middleware class for BepInEx logging
-     * Easy checking of logging config values before
-     * writing logs to the system.
-     */
+      * A middleware class for BepInEx logging
+      * Easy checking of logging config values before
+      * writing logs to the system.
+      */
     public static class Log
     {
       public static ManualLogSource ModLogger;

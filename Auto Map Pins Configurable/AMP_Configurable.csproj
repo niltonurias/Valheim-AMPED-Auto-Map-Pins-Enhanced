@@ -1,155 +1,50 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5C1A1606-C579-4934-BED8-641C16F4848A}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AMP_Configurable</RootNamespace>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyDescription>Overhauled and improved version of AMP Configurable by Materous</AssemblyDescription>
     <AssemblyName>AMP_Configurable</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
+    <AssemblyCopyright>Copyright ©  2021</AssemblyCopyright>
+    <Product>AMPED - Auto Map Pins Enhanced</Product>
+    <Version>1.3.7</Version>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.samboy.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+    <RootNamespace>AMP_Configurable</RootNamespace>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\Valheim\BepInEx\core\0Harmony.dll</HintPath>
-	  <HintPath>$(VALHEIM)\BepInEx\core\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_utils">
-      <HintPath>..\Valheim\valheim_Data\Managed\assembly_utils.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\assembly_utils.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_valheim">
-      <HintPath>..\Valheim\valheim_Data\Managed\assembly_valheim.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\assembly_valheim.dll</HintPath>
-    </Reference>
-    <Reference Include="BepInEx">
-      <HintPath>..\Valheim\BepInEx\core\BepInEx.dll</HintPath>
-	  <HintPath>$(VALHEIM)\BepInEx\core\BepInEx.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil, Version=0.11.1.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Cecil.0.11.1\lib\net40\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Mdb, Version=0.11.1.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Cecil.0.11.1\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Pdb, Version=0.11.1.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Cecil.0.11.1\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Rocks, Version=0.11.1.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Cecil.0.11.1\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoMod.RuntimeDetour, Version=20.1.1.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MonoMod.RuntimeDetour.20.1.1.4\lib\net40\MonoMod.RuntimeDetour.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoMod.Utils, Version=20.1.1.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MonoMod.Utils.20.1.1.4\lib\net40\MonoMod.Utils.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>false</SpecificVersion>
-      <HintPath>..\Libs\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="gui_framework">
-	  <HintPath>..\Valheim\valheim_Data\Managed\gui_framework.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\gui_framework.dll</HintPath>
-	</Reference>
-	<Reference Include="Unity.TextMeshPro">
-      <HintPath>..\Valheim\valheim_Data\Managed\Unity.TextMeshPro.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\Unity.TextMeshPro.dll</HintPath>
-	</Reference>
-    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Valheim\valheim_Data\Managed\UnityEngine.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\UnityEngine.dll</HintPath>
-	</Reference>
-    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Valheim\valheim_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-	</Reference>
-    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Valheim\valheim_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
-	</Reference>
-    <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Valheim\valheim_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
-	</Reference>
-    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Valheim\valheim_Data\Managed\UnityEngine.UI.dll</HintPath>
-	  <HintPath>$(VALHEIM)\valheim_Data\Managed\UnityEngine.UI.dll</HintPath>
-	</Reference>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="Costura.Fody" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Fody" Version="6.9.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="UnityEngine.Modules" Version="6000.0.46" IncludeAssets="compile" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AMP_Configurable.cs" />
-    <Compile Include="AMP_Configurable.Patches.cs" />
-    <Compile Include="AMP_Configurable.Modules.cs" />
-    <Compile Include="AMP_Configurable.PinConfig.cs" />
-    <Compile Include="AMP_Configurable.UI.cs" />
-    <Compile Include="ConfigurationManagerAttributes.cs" />
-    <Compile Include="Utilities.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+  
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="..\Libs\Newtonsoft.Json.dll">
-      <Link>Newtonsoft.Json.dll</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <Content Include="ILRepack.targets">
-      <SubType>Designer</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="Copy" AfterTargets="ILRepack">
-    <Exec Command="xcopy &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.6\plugins\&quot; /q /y /i" />
-  </Target>
-  <PropertyGroup>
-    <PostBuildEvent>
-xcopy "$(ProjectDir)\AMP_Enhanced\amp_pin_types.json" "$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.6\plugins\AMP_Enhanced\" /q /y /i
-xcopy "$(ProjectDir)\AMP_Enhanced\pin-icons" "$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.6\plugins\AMP_Enhanced\pin-icons" /c /q /y /i
-xcopy "$(ProjectDir)\..\icon.png" "$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.6\" /q /y /i
-xcopy "$(ProjectDir)\..\README.md" "$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.6\" /q /y /i
-xcopy "$(ProjectDir)\..\manifest.json" "$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.6\" /q /y /i
-</PostBuildEvent>
-  </PropertyGroup>
-  <Import Project="..\packages\ILRepack.Lib.MSBuild.Task.2.0.18.2\build\ILRepack.Lib.MSBuild.Task.targets" Condition="Exists('..\packages\ILRepack.Lib.MSBuild.Task.2.0.18.2\build\ILRepack.Lib.MSBuild.Task.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\ILRepack.Lib.MSBuild.Task.2.0.18.2\build\ILRepack.Lib.MSBuild.Task.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ILRepack.Lib.MSBuild.Task.2.0.18.2\build\ILRepack.Lib.MSBuild.Task.targets'))" />
+
+  <Import Project=".\valheim.targets" />
+
+  <Target Name="Copy" AfterTargets="Build">
+    <Exec Command="xcopy &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\plugins\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\AMP_Enhanced\amp_pin_types.json&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\plugins\AMP_Enhanced\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\AMP_Enhanced\pin-icons&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\plugins\AMP_Enhanced\pin-icons&quot; /c /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\..\icon.png&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\..\README.md&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\..\manifest.json&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\&quot; /q /y /i" />
   </Target>
 </Project>
