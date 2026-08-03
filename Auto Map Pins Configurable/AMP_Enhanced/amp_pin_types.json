@@ -493,6 +493,86 @@
       "size": 20,
       "minimapSize": 35,
       "object_ids": ["WoodFarm1", "WoodVillage1"]
+    },
+    {
+      "type": 326,
+      "label": "Charred Fortress",
+      "icon": "WoodHouse5.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["CharredFortress"]
+    },
+    {
+      "type": 327,
+      "label": "Charred ruins",
+      "icon": "WoodHouse5.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["CharredRuins"]
+    },
+    {
+      "type": 328,
+      "label": "Dvergr Charred Tower Ruins",
+      "icon": "WoodHouse5.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["CharredTowerRuins1_dvergr"]
+    },
+    {
+      "type": 329,
+      "label": "Volture nest",
+      "icon": "Volture_egg.png",
+      "size": 20,
+      "minimapSize": 25,
+      "object_ids": ["VoltureNest"]
+    },
+    {
+      "type": 330,
+      "label": "Monument of Torment",
+      "icon": "Monument_of_Torment.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["charredstone_spawner"]
+    },
+    {
+      "type": 331,
+      "label": "Sulfur arch",
+      "icon": "Sulfur.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["SulfurArch", "Pickable_SulfurRock"]
+    },
+    {
+      "type": 332,
+      "label": "Flametal ore vein",
+      "icon": "Flametal_ore.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["LeviathanLava"]
+    },
+    {
+      "type": 333,
+      "label": "Putrid Hole",
+      "icon": "WoodHouse5.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["MorgenHole1", "MorgenHole2", "MorgenHole3"]
+    },
+    {
+      "type": 334,
+      "label": "Tomb of Lord Reto",
+      "icon": "WoodHouse5.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["PlaceofMystery3"]
+    },
+    {
+      "type": 335,
+      "label": "Ancient Roots",
+      "icon": "YggdrasilRoot.png",
+      "size": 20,
+      "minimapSize": 35,
+      "object_ids": ["$prop_ancienttreeroot", "$item_ancientroot", "$item_ancientroot_empty", "$item_ancientroot_half", "$item_ancientroot_full", "YggdrasilRoot(Clone)", "YggdrasilRoot", "root1", "root2", "yggdrasilroot", "$prop_yggdrasilroot", "$prop_root", "$prop_root1"]
     }
   ]
 }

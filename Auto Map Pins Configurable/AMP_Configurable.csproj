@@ -6,7 +6,7 @@
     <AssemblyName>AMP_Configurable</AssemblyName>
     <AssemblyCopyright>Copyright ©  2021</AssemblyCopyright>
     <Product>AMPED - Auto Map Pins Enhanced</Product>
-    <Version>1.3.7</Version>
+    <Version>1.3.8</Version>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RestoreAdditionalProjectSources>
@@ -40,11 +40,11 @@
   <Import Project=".\valheim.targets" />
 
   <Target Name="Copy" AfterTargets="Build">
-    <Exec Command="xcopy &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\plugins\&quot; /q /y /i" />
-    <Exec Command="xcopy &quot;$(ProjectDir)\AMP_Enhanced\amp_pin_types.json&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\plugins\AMP_Enhanced\&quot; /q /y /i" />
-    <Exec Command="xcopy &quot;$(ProjectDir)\AMP_Enhanced\pin-icons&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\plugins\AMP_Enhanced\pin-icons&quot; /c /q /y /i" />
-    <Exec Command="xcopy &quot;$(ProjectDir)\..\icon.png&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\&quot; /q /y /i" />
-    <Exec Command="xcopy &quot;$(ProjectDir)\..\README.md&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\&quot; /q /y /i" />
-    <Exec Command="xcopy &quot;$(ProjectDir)\..\manifest.json&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.7\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.8\plugins\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\AMP_Enhanced\amp_pin_types.json&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.8\plugins\AMP_Enhanced\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\AMP_Enhanced\pin-icons&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.8\plugins\AMP_Enhanced\pin-icons&quot; /c /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\..\icon.png&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.8\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\..\README.md&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.8\&quot; /q /y /i" />
+    <Exec Command="xcopy &quot;$(ProjectDir)\..\manifest.json&quot; &quot;$(ProjectDir)\bin\Release\AMPED-AutoMapPinsEnhanced_v1.3.8\&quot; /q /y /i" />
   </Target>
 </Project>

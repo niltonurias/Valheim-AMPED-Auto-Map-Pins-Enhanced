@@ -16,6 +16,10 @@ Contibutions from the following modders was invaluable and appreciated:
 
 # Change Log
 
+### Version v1.3.8
+  * Support for build 0.221.12
+  * Include new pin for Ashlands
+
 ### Version v1.3.7
   * Support for build 0.221.4
   * Changing the csproj to doc recommend
