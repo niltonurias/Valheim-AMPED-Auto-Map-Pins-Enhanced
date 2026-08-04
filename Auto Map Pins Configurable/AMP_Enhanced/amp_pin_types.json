@@ -497,33 +497,33 @@
     {
       "type": 326,
       "label": "Charred Fortress",
-      "icon": "WoodHouse5.png",
+      "icon": "Jade.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["CharredFortress"]
     },
     {
       "type": 327,
       "label": "Charred ruins",
-      "icon": "WoodHouse5.png",
+      "icon": "Ashlands_pot_01.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["CharredRuins"]
     },
     {
       "type": 328,
       "label": "Dvergr Charred Tower Ruins",
-      "icon": "WoodHouse5.png",
+      "icon": "Ashlands_Dvergr.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["CharredTowerRuins1_dvergr"]
     },
     {
       "type": 329,
       "label": "Volture nest",
       "icon": "Volture_egg.png",
-      "size": 20,
-      "minimapSize": 25,
+      "size": 10,
+      "minimapSize": 15,
       "object_ids": ["VoltureNest"]
     },
     {
@@ -531,7 +531,7 @@
       "label": "Monument of Torment",
       "icon": "Monument_of_Torment.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["charredstone_spawner"]
     },
     {
@@ -539,7 +539,7 @@
       "label": "Sulfur arch",
       "icon": "Sulfur.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["SulfurArch", "Pickable_SulfurRock"]
     },
     {
@@ -547,23 +547,23 @@
       "label": "Flametal ore vein",
       "icon": "Flametal_ore.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["LeviathanLava"]
     },
     {
       "type": 333,
       "label": "Putrid Hole",
-      "icon": "WoodHouse5.png",
+      "icon": "Morgen_trophy.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["MorgenHole1", "MorgenHole2", "MorgenHole3"]
     },
     {
       "type": 334,
       "label": "Tomb of Lord Reto",
-      "icon": "WoodHouse5.png",
+      "icon": "Dyrnwyn.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["PlaceofMystery3"]
     },
     {
@@ -571,7 +571,7 @@
       "label": "Ancient Roots",
       "icon": "YggdrasilRoot.png",
       "size": 20,
-      "minimapSize": 35,
+      "minimapSize": 25,
       "object_ids": ["$prop_ancienttreeroot", "$item_ancientroot", "$item_ancientroot_empty", "$item_ancientroot_half", "$item_ancientroot_full", "YggdrasilRoot(Clone)", "YggdrasilRoot", "root1", "root2", "yggdrasilroot", "$prop_yggdrasilroot", "$prop_root", "$prop_root1"]
     }
   ]
