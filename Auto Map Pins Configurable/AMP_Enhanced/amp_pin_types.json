@@ -508,14 +508,14 @@
       "icon": "Ashlands_pot_01.png",
       "size": 20,
       "minimapSize": 25,
-      "object_ids": ["CharredRuins"]
+      "object_ids": ["charredruins1", "charredruins2", "charredruins3", "charredruins4"]
     },
     {
       "type": 328,
       "label": "Dvergr Charred Tower Ruins",
       "icon": "Ashlands_Dvergr.png",
       "size": 20,
-      "minimapSize": 25,
+      "minimapSize": 35,
       "object_ids": ["CharredTowerRuins1_dvergr"]
     },
     {
@@ -565,14 +565,6 @@
       "size": 20,
       "minimapSize": 25,
       "object_ids": ["PlaceofMystery3"]
-    },
-    {
-      "type": 335,
-      "label": "Ancient Roots",
-      "icon": "YggdrasilRoot.png",
-      "size": 20,
-      "minimapSize": 25,
-      "object_ids": ["$prop_ancienttreeroot", "$item_ancientroot", "$item_ancientroot_empty", "$item_ancientroot_half", "$item_ancientroot_full", "YggdrasilRoot(Clone)", "YggdrasilRoot", "root1", "root2", "yggdrasilroot", "$prop_yggdrasilroot", "$prop_root", "$prop_root1"]
     }
   ]
 }
